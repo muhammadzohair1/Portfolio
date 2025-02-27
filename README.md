@@ -23,4 +23,4 @@ Welcome to the repository for my personal portfolio website! This project showca
 3. Open `index.html` in your browser to view the website locally.
 
 ## 📬 Contact:
-Feel free to reach out to me via the contact form on the website or through my email: [your-email@example.com](mailto:your-email@example.com).
+Feel free to reach out to me via the contact form on the website or through my email: [zohairkhan2008@gmail.com](mailto:zohairkhan2008@gmail.com).
