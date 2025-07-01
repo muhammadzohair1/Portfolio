@@ -1,6 +1,6 @@
 # 🌐 My Portfolio Website
 
-Welcome to the repository for my personal portfolio website! This project showcases my skills, projects, and professional background in a visually appealing and user-friendly manner.
+welcome to the repository for my personal portfolio website! This project showcases my skills, projects, and professional background in a visually appealing and user-friendly manner.
 
 ## 🛠 Technologies Used:
 - HTML5 & CSS3
