@@ -1,224 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zohair Portfolio</title>
-    <link rel="stylesheet" href="Assets/css/Style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="images/x-icon" href="Assets/img/Zohair logo good one-01.webp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zohair Portfolio</title>
+  <link rel="stylesheet" href="Assets/css/Style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="icon" type="images/x-icon" href="Assets/img/Zohair logo good one-01.webp">
 </head>
+
 <body>
-    <header class="header">
-        <a href="#home" class="logo">Muhammad
-            <span>Zohair</span></a>
-    
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Animated Background Elements -->
+  <div class="bg-circles">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div>
+  </div>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, It's <span>Zohair</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>Hi, I'm Muhammad Zohair!
-                I am a creative graphic designer, video editor, and aspiring front-end developer based in Karachi, Pakistan. My passion lies in delivering innovative solutions that captivate audiences and exceed expectations. With a background in digital design and web development, I blend creativity with technical expertise to bring ideas to life.</p>
+  <!-- Floating Particles -->
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
 
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/muhammad-zohair-8baaa42b8/"><i class='bx bxl-linkedin'></i></i></a>
-            <a href="https://github.com/muhammadzohair1"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/zohairgraphics/"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.behance.net/gamerplayz"><i class='bx bxl-behance'></i></a>
-        </div>
-<div class=""></div>
-        <div class="btn-group">
-            <a href="#" class="btn">Hire</a>
-            <a href="#contact"
-            class="btn">Contact</a>
-        </div>
+  <!-- Header with Enhanced Animations -->
+  <header class="header animate__animated animate__fadeInDown">
+    <a href="index.html" class="logo" data-aos="fade-right">Muhammad
+      <span>Zohair</span></a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active nav-link" data-aos="fade-left" data-aos-delay="100">Home</a>
+      <a href="#education" class="nav-link" data-aos="fade-left" data-aos-delay="200">Education</a>
+      <a href="#services" class="nav-link" data-aos="fade-left" data-aos-delay="300">Services</a>
+      <a href="#testimonials" class="nav-link" data-aos="fade-left" data-aos-delay="400">Testimonials</a>
+      <a href="#contact" class="nav-link" data-aos="fade-left" data-aos-delay="500">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home" data-aos="fade-up">
+    <div class="home-content">
+      <h1 class="animate__animated animate__fadeInDown">Hi, It's <span>Zohair</span></h1>
+      <h3 class="text-animation animate__animated animate__fadeInUp">
+        I'm a
+        <br>
+        <span class="role-line">
+          <span id="role-text"></span><span class="cursor">|</span>
+        </span>
+      </h3>
+      <p class="animate__animated animate__fadeInUp animate__delay-1s">Hi, I'm Muhammad Zohair!
+        I am a creative Graphic Designer, Video Editor, Front-End Developer, Backend Developer, UI / UX Designer, MySQL
+        Developer, XML Developer, Freelancer based in Karachi, Pakistan. My
+        passion lies in delivering innovative solutions that captivate audiences and exceed expectations. With a
+        background in digital design and web development, I blend creativity with technical expertise to bring ideas to
+        life.</p>
+
+      <div class="social-icons animate__animated animate__fadeInUp animate__delay-1s">
+        <a href="https://www.linkedin.com/in/muhammad-zohair-8baaa42b8/"><i class='bx bxl-linkedin'></i></i></a>
+        <a href="https://github.com/muhammadzohair1"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/zohairgraphics/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.behance.net/gamerplayz"><i class='bx bxl-behance'></i></a>
+      </div>
+
+      <div class="btn-group animate__animated animate__fadeInUp animate__delay-1s">
+        <a href="hire.html" class="btn pulse-animate">Hire</a>
+        <a href="#contact" class="btn pulse-animate">Contact</a>
+      </div>
     </div>
-        <div class="home-img">
-            <img src="Assets/img/Zohair_logo_good_one-01-removebg-preview.png" alt="">
+    <div class="home-img" data-aos="zoom-in" data-aos-delay="300">
+      <img src="Assets/img/Zohair_logo_good_one-01-removebg-preview.png" alt="" class="floating">
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education" id="education" data-aos="fade-up">
+    <h2 class="heading" data-aos="fade-right">Education</h2>
+
+    <div class="timeline-items">
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-dot pulse"></div>
+        <div class="timeline-date">2023</div>
+        <div class="timeline-content hover-glow">
+          <h3>Matriculation-Qualified</h3>
+          <p>Completed Matriculation from Karachi Public School (KPS) in 2023, building a strong academic foundation
+            with a focus on creativity and digital skills.</p>
         </div>
-    </section>
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
+      </div>
 
-        <div class="timeline-items">
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-dot pulse"></div>
+        <div class="timeline-date">2024</div>
+        <div class="timeline-content hover-glow">
+          <h3>Graphic Designing</h3>
+          <p>Completed Bano Qabil graphic design course, mastering tools, creativity, and visual communication skills.
+          </p>
+        </div>
+      </div>
 
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2023
-            </div>
-            <div class="timeline-content">
-              <h3>Matriculation-Qualified</h3>
-              <p>Completed Matriculation
-                from Karachi Public School
-                (KPS) in 2023, building a
-                strong academic
-                foundation with a focus on
-                creativity and digital skills</p>
-            </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="timeline-dot pulse"></div>
+        <div class="timeline-date">2024</div>
+        <div class="timeline-content hover-glow">
+          <h3>Video Editing</h3>
+          <p>Completed Bano Qabil video editing course, mastering tools, creativity, and visual storytelling skills.</p>
+        </div>
+      </div>
 
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="timeline-dot pulse"></div>
+        <div class="timeline-date">2024</div>
+        <div class="timeline-content hover-glow">
+          <h3>Front-End Developer</h3>
+          <p>I specialize in front-end development, creating responsive and user-friendly web interfaces as part of my
+            Website Development Program.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services" data-aos="fade-up">
+    <h2 class="heading" data-aos="fade-down" data-aos-delay="100">Services</h2>
+    <div class="services-container">
+
+      <!-- First Row -->
+      <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
+        <div class="service-info hover-3d">
+          <div class="service-icon">
+            <i class='bx bx-code-alt'></i>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2024
-            </div>
-            <div class="timeline-content">
-              <h3>Graphic Designing</h3>
-              <p>Completed Bano Qabil graphic design course, mastering tools, creativity, and visual communication skills.</p>
-            </div>
-                
+          <h4>Front-End Development</h4>
+          <p>Creating responsive and interactive web interfaces with HTML, CSS, and JavaScript. We build websites that
+            are both visually appealing and highly functional.</p>
+          <ul class="service-features">
+            <li>Responsive Design</li>
+            <li>Cross-browser Compatibility</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-box" data-aos="zoom-in" data-aos-delay="300">
+        <div class="service-info hover-3d">
+          <div class="service-icon">
+            <i class='bx bx-refresh'></i>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2024
-            </div>
-            <div class="timeline-content">
-              <h3>Video Editing</h3>
-              <p>Completed Bano Qabil video editing course, mastering tools, creativity, and visual storytelling skills.</p>
-            </div>
-                
+          <h4>Update Designer</h4>
+          <p>Creating new and inclusive digital experiences that evolve with your business needs and customer
+            expectations.</p>
+          <ul class="service-features">
+            <li>Continuous Improvement</li>
+            <li>User-Centric Updates</li>
+            <li>Feature Enhancements</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="service-box" data-aos="zoom-in" data-aos-delay="400">
+        <div class="service-info hover-3d">
+          <div class="service-icon">
+            <i class='bx bx-data'></i>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2024
+          <h4>MySQL Developer</h4>
+          <p>Designing and managing efficient database solutions to maintain customer data and business operations.</p>
+          <ul class="service-features">
+            <li>Database Design</li>
+            <li>Query Optimization</li>
+            <li>Data Security</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-box" data-aos="zoom-in" data-aos-delay="500">
+        <div class="service-info hover-3d">
+          <div class="service-icon">
+            <i class='bx bx-code-curly'></i>
+          </div>
+          <h4>XML Developer</h4>
+          <p>Providing manual execution solutions for user applications with clean, structured XML data formats.</p>
+          <ul class="service-features">
+            <li>Data Structuring</li>
+            <li>Schema Design</li>
+            <li>Integration Solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Third Row -->
+      <div class="service-box" data-aos="zoom-in" data-aos-delay="600">
+        <div class="service-info hover-3d">
+          <div class="service-icon">
+            <i class='bx bxs-paint'></i>
+          </div>
+          <h4>Graphic Designer</h4>
+          <p>Creating visual solutions that optimize communication and brand identity for mainstream and custom
+            audiences.</p>
+          <ul class="service-features">
+            <li>Brand Identity</li>
+            <li>Marketing Materials</li>
+            <li>Digital Assets</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-box" data-aos="zoom-in" data-aos-delay="700">
+        <div class="service-info hover-3d">
+          <div class="service-icon">
+            <i class='bx bx-video'></i>
+          </div>
+          <h4>Video Editor</h4>
+          <p>Professional video production and editing services for download and streaming platforms.</p>
+          <ul class="service-features">
+            <li>Color Correction</li>
+            <li>Motion Graphics</li>
+            <li>Audio Enhancement</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Fourth Row -->
+      <div class="service-box" data-aos="zoom-in" data-aos-delay="800">
+        <div class="service-info hover-3d">
+          <div class="service-icon">
+            <i class='bx bx-server'></i>
+          </div>
+          <h4>Backend Developer</h4>
+          <p>Developing applications that are appropriate and scalable for client needs and business requirements.</p>
+          <ul class="service-features">
+            <li>API Development</li>
+            <li>System Architecture</li>
+            <li>Performance Tuning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-box" data-aos="zoom-in" data-aos-delay="900">
+        <div class="service-info hover-3d">
+          <div class="service-icon">
+            <i class='bx bx-line-chart'></i>
+          </div>
+          <h4>SEO Optimization</h4>
+          <p>Improving website customization and content writing for better search engine visibility and ranking.</p>
+          <ul class="service-features">
+            <li>Keyword Research</li>
+            <li>On-Page Optimization</li>
+            <li>Content Strategy</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Fifth Row (Full width) -->
+      <div class="service-box full-width" data-aos="zoom-in" data-aos-delay="1000">
+        <div class="service-info hover-3d">
+          <div class="service-icon">
+            <i class='bx bx-cloud-upload'></i>
+          </div>
+          <h4>Hosting & Deployment</h4>
+          <p>Providing hosting solutions for development projects with a focus on user interface and addressing
+            technical requirements.</p>
+          <ul class="service-features">
+            <li>Server Configuration</li>
+            <li>Domain Management</li>
+            <li>Continuous Deployment</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials" data-aos="fade-up">
+    <div class="testimonials-box">
+      <h2 class="heading" data-aos="fade-down">Testimonials</h2>
+
+      <div class="wrapper">
+        <div class="testimonial-item" data-aos="flip-left" data-aos-delay="100">
+          <div class="testimonial-inner">
+            <div class="testimonial-front">
+              <img src="Assets/img/testimonaial (1).jpeg" alt="Sophia">
+              <h2>Sophia</h2>
+              <div class="rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
             </div>
-            <div class="timeline-content">
-              <h3>Front-End Developer</h3>
-              <p>I specialize in front-end development, creating responsive and user-friendly web interfaces as part of my Website Development Program.</p>
+            <div class="testimonial-back">
+              <p>"The service was exceptional, and the team went above and beyond to meet our needs. Highly
+                recommended!"</p>
+              <div class="quote-icon">
+                <i class='bx bxs-quote-alt-left'></i>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
 
-            <section class="services" id="services">
-                <h2 class="heading">Services</h2>
-                <div class="services-container">
-                  <div class="service-box">
-                    <div class="service-info">
-                      <h4>Front-End Development</h4>
-                      <p>Creating responsive and interactive web interfaces that enhance user experience. From HTML and CSS to JavaScript frameworks, we build websites that are both visually appealing and highly functional.</p>
-                    </div>
-                  </div>
-                  <div class="service-box">
-                    <div class="service-info">
-                      <h4>Graphic Designer</h4>
-                      <p>Creating impactful visuals that speak your brand's language. From logos to complete branding solutions, we deliver designs that resonate with your audience.</p>
-                    </div>
-                  </div>
-                  <div class="service-box">
-                    <div class="service-info">
-                      <h4>UI / UX Designer</h4>
-                      <p>Crafting intuitive and visually stunning designs that prioritize user experience. We turn ideas into engaging interfaces that leave a lasting impression on your audience.</p>
-                    </div>
-                  </div>
-                  <div class="service-box">
-                    <div class="service-info">
-                      <h4>Video editor</h4>
-                      <p>Transforming raw footage into compelling stories with professional video editing. From color grading to dynamic transitions, we create videos that captivate and inspire.</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section class="testimonials" id="testimonials">
-                <div class="testimonials-box">
-                    <h2 class="heading">Testimonials</h2>
-
-                    <div class="wrapper">
-                        <div class="testimonial-item">
-                            <img src="Assets/img/testimonaial (1).jpeg" alt="">
-                            <h2>Sophia</h2>
-                            <div class="rating">
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                            </div>
-                        <p>The service was exceptional, and the team went above and beyond to meet our needs. Highly recommended!</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="Assets/img/testimonaial (2).jpeg" alt="">
-                        <h2>Ethan</h2>
-                        <div class="rating">
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                            <i class='bx bxs-star' id="star"></i>
-                        </div>
-                    <p>I was thoroughly impressed with the professionalism and quality of work delivered. Will definitely use their services again.</p>
-                </div>
-                <div class="testimonial-item">
-                    <img src="Assets/img/testimonaial (3).jpeg" alt="">
-                    <h2>Aria</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                <p>Outstanding experience from start to finish. The attention to detail and customer service were top-notch.</p>
+        <div class="testimonial-item" data-aos="flip-left" data-aos-delay="200">
+          <div class="testimonial-inner">
+            <div class="testimonial-front">
+              <img src="Assets/img/testimonaial (2).jpeg" alt="Ethan">
+              <h2>Ethan</h2>
+              <div class="rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
             </div>
-                </div>
-                </div>
-            </section>
+            <div class="testimonial-back">
+              <p>"I was thoroughly impressed with the professionalism and quality of work delivered. Will definitely use
+                their services again."</p>
+              <div class="quote-icon">
+                <i class='bx bxs-quote-alt-left'></i>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <section class="contact" id="contact">
-                <h2 class="heading">Contact <span>Me</span></h2>
-                <form action="">
-                  <div class="input-group">
-                    <div class="input-box">
-                      <input type="text" placeholder="Full Name">
-                      <input type="email" placeholder="Email">
-                    </div>
-                    <div class="input-box">
-                      <input type="number" placeholder="Phone Number">
-                      <input type="text" placeholder="Subject">
-                    </div>
-                  </div>
-                  <div class="input-group-2">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" class="btn">
-                  </div>
-                </form>
-            </section>
-            <footer class="footer">
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/muhammad-zohair-8baaa42b8/"><i class='bx bxl-linkedin'></i></i></a>
-                    <a href="https://github.com/muhammadzohair1"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.instagram.com/zohairgraphics/"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://www.behance.net/gamerplayz"><i class='bx bxl-behance'></i></a>
-                </div>
-                <ul class="list">
-                    <li>
-                      <a href="#">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="#">Services</a>
-                    </li>
-                    <li>
-                      <a href="#">About Me</a>
-                    </li>
-                    <li>
-                      <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Testimonials</a>
-                      </li>
-                  </ul>
-                  <p class="copyright">
-                    © Muhammad Zohair | All Rights Reserved 
-                  </p>
-            </footer>
-    <script src="Assets/js/Script.js"></script>
+        <div class="testimonial-item" data-aos="flip-left" data-aos-delay="300">
+          <div class="testimonial-inner">
+            <div class="testimonial-front">
+              <img src="Assets/img/testimonaial (3).jpeg" alt="Aria">
+              <h2>Aria</h2>
+              <div class="rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+            </div>
+            <div class="testimonial-back">
+              <p>"Outstanding experience from start to finish. The attention to detail and customer service were
+                top-notch."</p>
+              <div class="quote-icon">
+                <i class='bx bxs-quote-alt-left'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact" data-aos="fade-up">
+    <h2 class="heading" data-aos="fade-down">Contact <span>Me</span></h2>
+    <form id="contactForm" novalidate data-aos="fade-up" data-aos-delay="100">
+      <div class="input-group">
+        <div class="input-box">
+          <div class="field-wrapper">
+            <input type="text" id="name" placeholder="Full Name" required class="input-animate">
+            <small class="error-message"></small>
+          </div>
+          <div class="field-wrapper">
+            <input type="email" id="email" placeholder="Email" required class="input-animate">
+            <small class="error-message"></small>
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="field-wrapper">
+            <input type="number" id="phone" placeholder="Phone Number" required class="input-animate">
+            <small class="error-message"></small>
+          </div>
+          <div class="field-wrapper">
+            <input type="number" id="age" placeholder="Age" required class="input-animate">
+            <small class="error-message"></small>
+          </div>
+        </div>
+      </div>
+      <div class="input-group-2">
+        <textarea id="message" placeholder="Your Message" class="input-animate"></textarea>
+        <input type="submit" value="Send Message" class="btn pulse-animate">
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/muhammad-zohair-8baaa42b8/" class="social-icon"><i
+          class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/muhammadzohair1" class="social-icon"><i class='bx bxl-github'></i></a>
+      <a href="https://www.instagram.com/zohairgraphics/" class="social-icon"><i class='bx bxl-instagram'></i></a>
+      <a href="https://www.behance.net/gamerplayz" class="social-icon"><i class='bx bxl-behance'></i></a>
+    </div>
+    <ul class="list">
+      <li>
+        <a href="#home" class="footer-link">Home</a>
+      </li>
+      <li>
+        <a href="#education" class="footer-link">Education</a>
+      </li>
+      <li>
+        <a href="#services" class="footer-link">Services</a>
+      </li>
+      <li>
+        <a href="#testimonials" class="footer-link">Testimonials</a>
+      </li>
+      <li>
+        <a href="#contact" class="footer-link">Contact</a>
+      </li>
+    </ul>
+    <p class="copyright">
+      <a href="index.html" class="logo">Muhammad <span>Zohair</span></a> |
+      <span class="copyright-text">All Rights Reserved</span>
+    </p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top" id="back-to-top">
+    <i class='bx bx-up-arrow-alt'></i>
+  </a>
+
+  <script src="Assets/js/Script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      delay: 100,
+      once: false,
+      mirror: true
+    });
+  </script>
 </body>
+
 </html>
