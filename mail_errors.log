@@ -1,0 +1,45 @@
+[09-Aug-2025 21:43:17 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'Zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php(20): mysqli->__construct('localhost', 'Zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php on line 20
+[09-Aug-2025 21:43:20 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'Zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php(20): mysqli->__construct('localhost', 'Zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php on line 20
+[09-Aug-2025 21:43:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'Zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php(20): mysqli->__construct('localhost', 'Zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php on line 20
+[09-Aug-2025 21:43:29 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'Zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php(20): mysqli->__construct('localhost', 'Zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php on line 20
+[09-Aug-2025 21:43:30 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'Zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php(20): mysqli->__construct('localhost', 'Zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php on line 20
+[09-Aug-2025 21:43:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'Zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php(20): mysqli->__construct('localhost', 'Zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php on line 20
+[09-Aug-2025 21:45:19 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'Zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php(20): mysqli->__construct('localhost', 'Zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php on line 20
+[09-Aug-2025 21:45:26 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'Zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php(20): mysqli->__construct('localhost', 'Zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php on line 20
+[09-Aug-2025 21:45:32 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'Zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php(20): mysqli->__construct('localhost', 'Zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Zohair Portfolio Website\process-contact.php on line 20

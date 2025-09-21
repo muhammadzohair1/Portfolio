@@ -1,0 +1,201 @@
+[10-Aug-2025 15:24:19 Europe/Berlin] Error: Please fill in the name field
+[10-Aug-2025 15:24:23 Europe/Berlin] Error: Please fill in the email field
+[10-Aug-2025 15:24:30 Europe/Berlin] Error: Please fill in the phone field
+[10-Aug-2025 15:24:33 Europe/Berlin] Error: Please fill in the age field
+[10-Aug-2025 15:24:35 Europe/Berlin] Error: Please fill in the message field
+[10-Aug-2025 15:24:36 Europe/Berlin] Error: Phone number must be 11 digits
+[10-Aug-2025 15:28:48 Europe/Berlin] Error: Please fill in the name field
+[10-Aug-2025 16:39:25 Europe/Berlin] Error: Please fill in the name field
+[10-Aug-2025 16:39:26 Europe/Berlin] Error: Please fill in the name field
+[10-Aug-2025 16:39:28 Europe/Berlin] Error: Please fill in the name field
+[10-Aug-2025 16:39:32 Europe/Berlin] Error: Please fill in the email field
+[10-Aug-2025 16:39:34 Europe/Berlin] Error: Please fill in the phone field
+[10-Aug-2025 16:39:37 Europe/Berlin] Error: Please fill in the age field
+[10-Aug-2025 16:39:40 Europe/Berlin] Error: Please fill in the message field
+[10-Aug-2025 16:39:42 Europe/Berlin] Error: Phone number must be 11 digits
+[10-Aug-2025 16:43:34 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 13:56:13 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 13:56:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 13:56:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 13:56:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 13:56:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 13:56:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 13:56:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 13:56:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:22:56 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:28 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:30 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:30 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:30 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:30 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:32 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:32 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:25:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:35:03 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'portfolio_contacts' in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[21-Sep-2025 14:37:36 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:36 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:36 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:36 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:37 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:37 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:37 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:37 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:37 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:38 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:38 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:38 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:38 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 14:37:53 Europe/Berlin] Error: Please fill in the email field
+[21-Sep-2025 14:38:01 Europe/Berlin] Error: Please fill in the email field
+[21-Sep-2025 14:38:01 Europe/Berlin] Error: Please fill in the email field
+[21-Sep-2025 14:38:03 Europe/Berlin] Error: Please fill in the email field
+[21-Sep-2025 14:38:09 Europe/Berlin] Error: Please fill in the phone field
+[21-Sep-2025 14:38:14 Europe/Berlin] Error: Please fill in the phone field
+[21-Sep-2025 14:38:15 Europe/Berlin] Error: Please fill in the phone field
+[21-Sep-2025 14:38:15 Europe/Berlin] Error: Please fill in the phone field
+[21-Sep-2025 14:38:17 Europe/Berlin] Error: Please fill in the age field
+[21-Sep-2025 14:38:23 Europe/Berlin] Error: Please fill in the age field
+[21-Sep-2025 14:38:26 Europe/Berlin] Error: Please fill in the message field
+[21-Sep-2025 14:38:26 Europe/Berlin] Error: Please fill in the message field
+[21-Sep-2025 14:38:26 Europe/Berlin] Error: Please fill in the message field
+[21-Sep-2025 14:38:30 Europe/Berlin] Error: Please fill in the message field
+[21-Sep-2025 17:31:46 Europe/Berlin] Error: Please fill in the name field
+[21-Sep-2025 17:31:49 Europe/Berlin] Error: Please fill in the message field
+[21-Sep-2025 18:03:57 Europe/Berlin] Error: Please fill in the name field

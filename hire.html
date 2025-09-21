@@ -1,0 +1,2339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Muhammad Zohair | Professional Services</title>
+    <link rel="stylesheet" href="./assets/css/Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="Assets/img/Zohair logo good one-01-modified.png" class="icon">
+    <style>
+        /* HIRE ME PAGE */
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --main-color: #00eeee;
+            --bg-color: #0a0a0a;
+            --second-bg-color: #1a1a1a;
+            --text-color: #ffffff;
+            --secondary-text: #cccccc;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --gradient-primary: linear-gradient(135deg, var(--main-color), #0099ff);
+            --gradient-secondary: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            --shadow-primary: 0 10px 30px rgba(0, 238, 238, 0.2);
+            --shadow-secondary: 0 5px 15px rgba(0, 0, 0, 0.3);
+            --border-radius: 15px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 62.5%;
+            /* 1rem = 10px */
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== NAVIGATION ===== */
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 4rem 12%;
+            background: rgba(0, 0, 0, .3);
+            backdrop-filter: blur(10px);
+            justify-content: space-between;
+            align-items: center;
+            z-index: 5
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 800
+        }
+
+        .logo:hover {
+            transform: scale(1.1)
+        }
+
+        .logo span {
+            text-shadow: 0 0 25px var(--main-color)
+        }
+
+
+        .navbar a {
+            font-size: 1.8rem;
+            margin-left: 4rem;
+            font-weight: 500
+        }
+
+        #menu-icon {
+            font-size: 3.6rem;
+            display: none
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 60px 20px
+        }
+
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @media (max-width:1065px) {
+            #menu-icon {
+                display: block
+            }
+
+            .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(15, 15, 15, .95);
+                backdrop-filter: blur(14px);
+                flex-direction: column;
+                align-items: center;
+                padding: 3rem 0;
+                display: none;
+                opacity: 0;
+                animation: none;
+                z-index: 999
+            }
+
+            .navbar.active {
+                display: flex;
+                opacity: 1;
+                animation: .4s forwards slideDown
+            }
+
+            .navbar a {
+                font-size: 1.7rem;
+                color: #fff;
+                margin: 1.2rem 0;
+                opacity: 0;
+                transform: translateY(-10px);
+                animation: .4s forwards fadeIn
+            }
+
+            .navbar.active a:first-child {
+                animation-delay: .1s
+            }
+
+            .navbar.active a:nth-child(2) {
+                animation-delay: .2s
+            }
+
+            .navbar.active a:nth-child(3) {
+                animation-delay: .3s
+            }
+
+            .navbar.active a:nth-child(4) {
+                animation-delay: .4s
+            }
+
+            .navbar.active a:nth-child(5) {
+                animation-delay: .5s
+            }
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hire-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: radial-gradient(ellipse at center, rgba(0, 238, 238, 0.1) 0%, var(--bg-color) 70%);
+            overflow: hidden;
+        }
+
+        .hero-content-wrapper {
+            text-align: center;
+            max-width: 900px;
+            padding: 0 2rem;
+            z-index: 2;
+        }
+
+        .hero-graphic-element {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 3rem;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            animation: heroFloat 6s ease-in-out infinite;
+        }
+
+        .hero-graphic-element::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .logo-animation {
+            font-size: 4rem;
+            color: var(--bg-color);
+            z-index: 1;
+        }
+
+        .hero-main-heading {
+            font-size: clamp(4rem, 8vw, 6rem);
+            margin-bottom: 2rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+            animation: textGlow 3s ease-in-out infinite alternate;
+        }
+
+        .hero-subheading {
+            font-size: clamp(1.6rem, 3vw, 2rem);
+            color: var(--secondary-text);
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 3rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 600;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button.primary {
+            background: var(--gradient-primary);
+            color: var(--bg-color);
+            box-shadow: var(--shadow-primary);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--main-color);
+            border: 2px solid var(--main-color);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 238, 238, 0.3);
+        }
+
+        .hero-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* ===== SERVICES OVERVIEW ===== */
+        .services-overview {
+            padding: 10rem 0;
+            background: var(--second-bg-color);
+        }
+
+        .services-grid-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 5rem;
+            position: relative;
+            /* Added for proper width reference */
+        }
+
+        /* Add this to your existing CSS */
+        .service-features {
+            list-style-position: inside;
+            /* This moves bullets inside content flow */
+            padding-left: 0;
+            /* Remove default padding */
+            text-align: center;
+            /* Align text to left */
+            margin: 1.5rem auto;
+            /* Center the entire list block */
+            max-width: 80%;
+            /* Control width for better readability */
+        }
+
+        .service-features li {
+            padding-left: 1rem;
+            /* Add some spacing between bullet and text */
+            text-indent: -1rem;
+            /* Pull text back to align with bullet */
+            margin-bottom: 0.8rem;
+            /* Space between list items */
+        }
+
+        /* Specific style for the last card (Hosting & Deployment) */
+        .services-grid-overview .service-card:last-child {
+            grid-column: 1 / -1;
+            /* Accounts for grid gap */
+            margin-left: 0;
+            margin-right: 0;
+            padding: 3rem 4rem;
+            /* Increased side padding for better appearance */
+        }
+
+        .service-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Rest of your existing CSS remains unchanged */
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 238, 238, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--main-color);
+            box-shadow: var(--shadow-primary);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 3rem;
+            color: var(--bg-color);
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            transform: rotateY(360deg);
+        }
+
+        .service-card h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .service-card p {
+            font-size: 1.4rem;
+            color: var(--secondary-text);
+            line-height: 1.6;
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        .how-it-works {
+            padding: 10rem 0;
+        }
+
+        .hire-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .heading {
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            text-align: center;
+            margin-bottom: 5rem;
+            color: var(--text-color);
+            position: relative;
+        }
+
+        .heading::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--main-color);
+            border-radius: 2px;
+        }
+
+        .hire-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 4rem;
+            margin-top: 5rem;
+        }
+
+        .step-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .step-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: var(--gradient-primary);
+            border-radius: var(--border-radius);
+            opacity: 0;
+            z-index: -1;
+            transition: var(--transition);
+        }
+
+        .step-card:hover::before {
+            opacity: 1;
+        }
+
+        .step-card:hover {
+            transform: translateY(-10px);
+            color: var(--bg-color);
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            color: var(--bg-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 auto 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        .step-card h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .step-card p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            color: var(--secondary-text);
+            transition: var(--transition);
+        }
+
+        .step-card:hover p {
+            color: rgba(10, 10, 10, 0.8);
+        }
+
+        /* ===== HIRE FORM SECTION ===== */
+        .hire-form-section {
+            padding: 10rem 0;
+            background: var(--second-bg-color);
+            position: relative;
+        }
+
+        .modern-form {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .modern-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .form-title-container {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .form-title {
+            font-size: clamp(2.8rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+
+        .form-subtitle {
+            font-size: 1.6rem;
+            color: var(--secondary-text);
+        }
+
+        /* ===== PROGRESS BAR ===== */
+        .progress-container {
+            margin-bottom: 4rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-primary);
+            border-radius: 3px;
+            width: 25%;
+            transition: width 0.5s ease;
+            position: relative;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.3) 50%, transparent 60%);
+            animation: shimmer 2s infinite;
+        }
+
+        .progress-steps {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0.5;
+            transition: var(--transition);
+        }
+
+        .step.active {
+            opacity: 1;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .step.active .step-number {
+            background: var(--main-color);
+            border-color: var(--main-color);
+            color: var(--bg-color);
+        }
+
+        .step-label {
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--secondary-text);
+        }
+
+        .step.active .step-label {
+            color: var(--text-color);
+        }
+
+        /* ===== FORM STEPS ===== */
+        .form-step {
+            display: none;
+            animation: slideInRight 0.5s ease;
+        }
+
+        .form-step.active {
+            display: block;
+        }
+
+        .form-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            color: var(--main-color);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-title i {
+            font-size: 2.2rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            position: relative;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .required {
+            color: #ff6b6b;
+        }
+
+        /* ===== INPUT STYLES ===== */
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            font-size: 1.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            /* Increased from 0.05 to 0.15 */
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-color);
+            transition: var(--transition);
+            font-family: inherit;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: var(--main-color);
+            box-shadow: 0 0 0 4px rgba(0, 238, 238, 0.1);
+            outline: none;
+            background: rgba(0, 238, 238, 0.15);
+            /* Increased from 0.05 to 0.15 */
+            transform: translateY(-2px);
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* Custom dropdown options */
+        select option {
+            background: var(--second-bg-color);
+            color: var(--text-color);
+            padding: 1rem;
+        }
+
+        /* Selected dropdown option */
+        select option:checked {
+            background: var(--main-color);
+            color: var(--bg-color);
+        }
+
+        /* Placeholder text */
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+            opacity: 1;
+        }
+
+        /* ===== CUSTOM SELECT ===== */
+        .custom-select {
+            position: relative;
+        }
+
+        .custom-select select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+            padding-right: 4rem;
+        }
+
+        .custom-select::after {
+            content: "▼";
+            position: absolute;
+            top: 50%;
+            right: 2rem;
+            transform: translateY(-50%);
+            color: var(--main-color);
+            font-size: 1.2rem;
+            pointer-events: none;
+            transition: var(--transition);
+            opacity: 0.8;
+        }
+
+        .custom-select:hover::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        /* ===== SERVICES GRID ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .service-option {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-option::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 238, 238, 0.1), transparent);
+            transition: left 0.3s ease;
+        }
+
+        .service-option:hover::before {
+            left: 100%;
+        }
+
+        .service-option:hover {
+            border-color: var(--main-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0, 238, 238, 0.1);
+        }
+
+        .service-option input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .checkmark {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .service-option input:checked+.checkmark {
+            background: var(--main-color);
+            border-color: var(--main-color);
+            transform: scale(1.1);
+        }
+
+        .service-option input:checked+.checkmark::after {
+            content: "✓";
+            color: var(--bg-color);
+            font-size: 1.4rem;
+            font-weight: bold;
+            animation: checkPop 0.3s ease;
+        }
+
+        .service-option span {
+            font-size: 1.4rem;
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+
+        .service-option:hover span {
+            color: var(--main-color);
+        }
+
+        /* ===== ERROR MESSAGES ===== */
+        .error-message {
+            color: #ff6b6b;
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: var(--transition);
+        }
+
+        .error-message.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .form-group.error input,
+        .form-group.error textarea,
+        .form-group.error select {
+            border-color: #ff6b6b;
+            box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.1);
+        }
+
+        /* ===== FORM NAVIGATION ===== */
+        .form-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 3rem;
+            background: transparent;
+            border: 2px solid var(--main-color);
+            border-radius: 10px;
+            color: var(--main-color);
+            font-size: 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .nav-btn:not(:disabled):hover {
+            background: var(--main-color);
+            color: var(--bg-color);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 238, 238, 0.2);
+        }
+
+        .submit-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 3rem;
+            background: var(--gradient-primary);
+            border: none;
+            border-radius: 10px;
+            color: var(--bg-color);
+            font-size: 1.6rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-primary);
+        }
+
+        .btn-loader,
+        .btn-success {
+            display: none;
+        }
+
+        .btn-text .submit-btn.loading .btn-text {
+            display: none;
+        }
+
+        .submit-btn.loading .btn-loader {
+            display: block;
+        }
+
+        .submit-btn.success .btn-text,
+        .submit-btn.success .btn-loader {
+            display: none;
+        }
+
+        .submit-btn.success .btn-success {
+            display: block;
+        }
+
+        /* ===== FOOTER ===== */
+
+        .logo-hire {
+            font-size: 1.5rem;
+            cursor: pointer;
+            font-weight: 800;
+            color: var(--text-color);
+            text-shadow: 0 0 25px var(--main-color)
+        }
+
+        .logo-hire a {
+            color: var(--text-color);
+            transition: 0.5s
+        }
+
+        .logo-hire a:hover {
+            transform: scale(1.1)
+        }
+
+        .footer {
+            background: var(--bg-color);
+            padding: 5rem 0 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--main-color);
+        }
+
+        .footer-section h4 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .footer-section p {
+            font-size: 1.4rem;
+            text-align: center;
+            color: var(--secondary-text);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--secondary-text);
+            text-decoration: none;
+            font-size: 1.4rem;
+            transition: var(--transition);
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--main-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: var(--glass-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            font-size: 1.8rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--main-color);
+            color: var(--bg-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-bottom p {
+            font-size: 1.4rem;
+            color: var(--secondary-text);
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes heroFloat {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.1;
+            }
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 20px rgba(0, 238, 238, 0.5);
+            }
+
+            100% {
+                text-shadow: 0 0 30px rgba(0, 238, 238, 0.8);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes checkPop {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 768px) {
+            html {
+                font-size: 55%;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 10, 0.95);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                gap: 0;
+                padding: 2rem 0;
+                border-top: 1px solid var(--border-color);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-menu li {
+                padding: 1rem 2rem;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-navigation {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .nav-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .progress-steps {
+                gap: 1rem;
+            }
+
+            .step-label {
+                font-size: 1rem;
+            }
+
+            .modern-form {
+                padding: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 50%;
+            }
+
+            .hire-container {
+                padding: 0 1rem;
+            }
+
+            .hero-content-wrapper {
+                padding: 0 1rem;
+            }
+
+            .modern-form {
+                padding: 1.5rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .progress-steps .step-label {
+                display: none;
+            }
+        }
+
+        /* ===== ACCESSIBILITY ===== */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+
+            .navbar,
+            .hero-particles,
+            .footer {
+                display: none;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            .modern-form {
+                background: white;
+                border: 1px solid black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Enhanced Animations -->
+    <header class="header animate__animated animate__fadeInDown">
+        <a href="index.html" class="logo" data-aos="fade-right">Muhammad
+            <span>Zohair</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active nav-link" data-aos="fade-left" data-aos-delay="100">Home</a>
+            <a href="#services" class="nav-link" data-aos="fade-left" data-aos-delay="200">Services</a>
+            <a href="#hire" class="nav-link" data-aos="fade-left" data-aos-delay="300">Hire Me</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hire-hero" id="home">
+        <div class="hero-content-wrapper" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-graphic-element">
+                <i class="fas fa-handshake logo-animation"></i>
+            </div>
+            <h1 class="hero-main-heading">Let's Work Together</h1>
+            <p class="hero-subheading">
+                Transform your ideas into digital reality with professional web development,
+                design, and consulting services tailored to your needs.
+            </p>
+            <div class="hero-cta">
+                <a href="#hire" class="cta-button primary">
+                    <span style="color: black;">Start Your Project</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#services" class="cta-button secondary">
+                    <span>View Services</span>
+                    <i class="fas fa-eye"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview" id="services" data-aos="fade-up">
+        <div class="hire-container">
+            <h2 class="heading">Professional Services</h2>
+            <p class="section-subtitle" style="text-align: center; font-size: 1.5rem;">Custom digital solutions tailored
+                to your needs</p>
+
+            <div class="services-grid-overview">
+                <!-- Front-End Development -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Front-End Development</h3>
+                    <p>Building responsive and interactive web interfaces.</p>
+                    <ul class="service-features">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+
+                <!-- UI/UX Designer -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Designer</h3>
+                    <p>Creating intuitive and engaging user experiences.</p>
+                    <ul class="service-features">
+                        <li>User Interface Design</li>
+                        <li>User Experience Research</li>
+                        <li>Prototyping</li>
+                    </ul>
+                </div>
+
+                <!-- MySQL Developer -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL Developer</h3>
+                    <p>Relational database design and management.</p>
+                    <ul class="service-features">
+                        <li>Database Design</li>
+                        <li>Query Optimization</li>
+                        <li>Data Security</li>
+                    </ul>
+                </div>
+
+                <!-- XML Developer -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <h3>XML Developer</h3>
+                    <p>Structured data solutions for web applications.</p>
+                    <ul class="service-features">
+                        <li>XML Schema Design</li>
+                        <li>Data Transformation</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Graphic Designer -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Graphic Designer</h3>
+                    <p>Visual communication through creative design.</p>
+                    <ul class="service-features">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Brand Identity</li>
+                    </ul>
+                </div>
+
+                <!-- Video Editor -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editor</h3>
+                    <p>Professional video production and editing.</p>
+                    <ul class="service-features">
+                        <li>Adobe Premiere Pro</li>
+                        <li>Video Effects</li>
+                        <li>Color Grading</li>
+                    </ul>
+                </div>
+
+                <!-- Backend Developer -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Developer</h3>
+                    <p>Server-side application development.</p>
+                    <ul class="service-features">
+                        <li>PHP Development</li>
+                        <li>Laravel Framework</li>
+                        <li>API Development</li>
+                    </ul>
+                </div>
+
+                <!-- SEO Optimization -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Improving website visibility and ranking.</p>
+                    <ul class="service-features">
+                        <li>Keyword Research</li>
+                        <li>On-Page SEO</li>
+                        <li>Technical SEO</li>
+                    </ul>
+                </div>
+
+                <!-- Hosting & Deployment -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Hosting & Deployment</h3>
+                    <p>Website hosting and deployment solutions.</p>
+                    <ul class="service-features">
+                        <li>Server Configuration</li>
+                        <li>Domain Management</li>
+                        <li>SSL Certificates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" data-aos="fade-up">
+        <div class="hire-container">
+            <h2 class="heading">How It Works</h2>
+            <div class="hire-steps">
+                <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h3>Tell Me About Your Project</h3>
+                    <p>Fill out the form below with your project details, requirements, and timeline.</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <h3>Get a Custom Proposal</h3>
+                    <p>Receive a detailed proposal with timeline, pricing, and project roadmap within 24 hours.</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <h3>Let's Build Something Amazing</h3>
+                    <p>Start your project with regular updates, milestone reviews, and transparent communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Form Section -->
+    <section class="hire-form-section" id="hire">
+        <div class="hire-container">
+            <form class="modern-form" id="hireForm" action="submit_form.php" method="POST">
+                <div class="form-title-container" data-aos="fade-up">
+                    <h2 class="form-title">Start Your Project</h2>
+                    <p class="form-subtitle">Let's discuss your vision and bring it to life</p>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="step active" data-step="1">
+                            <span class="step-number">1</span>
+                            <span class="step-label">Personal Info</span>
+                        </div>
+                        <div class="step" data-step="2">
+                            <span class="step-number">2</span>
+                            <span class="step-label">Project Details</span>
+                        </div>
+                        <div class="step" data-step="3">
+                            <span class="step-number">3</span>
+                            <span class="step-label">Services</span>
+                        </div>
+                        <div class="step" data-step="4">
+                            <span class="step-number">4</span>
+                            <span class="step-label">Budget & Timeline</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 1: Personal Information -->
+                <div class="form-step active" id="step1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="form-section">
+                        <div class="section-title">
+                            <i class="fas fa-user"></i>
+                            Personal Information
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company/Organization <span class="required">*</span></label>
+                                <input type="text" id="company" name="company" required>
+                                <div class="error-message"></div> <!-- ✅ add this -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Project Details -->
+                <div class="form-step" id="step2">
+                    <div class="form-section">
+                        <div class="section-title">
+                            <i class="fas fa-project-diagram"></i>
+                            Project Details
+                        </div>
+                        <div class="form-group">
+                            <label for="projectTitle">Project Title <span class="required">*</span></label>
+                            <input type="text" id="projectTitle" name="projectTitle" required>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Project Type <span class="required">*</span></label>
+                            <div class="custom-select">
+                                <select id="projectType" name="projectType" required>
+                                    <option value="" selected disabled>Select project type</option>
+                                    <option value="Front-End">Front-End Development</option>
+                                    <option value="Backend">Backend Developer</option>
+                                    <option value="UI/UX">UI/UX Designer</option>
+                                    <option value="XML">XML Developer</option>
+                                    <option value="MySQL">MySQL Developer</option>
+                                    <option value="Graphic">Graphic Designer</option>
+                                    <option value="Video">Video Editor</option>
+                                    <option value="SEO">SEO Optimization</option>
+                                    <option value="Hosting">Hosting & Deployment</option>
+                                </select>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectDescription">Project Description <span class="required">*</span></label>
+                            <textarea id="projectDescription" name="projectDescription"
+                                placeholder="Describe your project, goals, target audience, and any specific requirements..."
+                                required></textarea>
+                            <div class="error-message"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 3: Services -->
+                <div class="form-step" id="step3">
+                    <div class="form-section">
+                        <div class="section-title">
+                            <i class="fas fa-cogs"></i>
+                            Required Services
+                        </div>
+                        <div class="services-grid">
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="frontend">
+                                <div class="checkmark"></div>
+                                <span>Front-End Development</span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="uiux">
+                                <div class="checkmark"></div>
+                                <span>UI/UX Designer</span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="mysql">
+                                <div class="checkmark"></div>
+                                <span>MySQL Developer</span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="xml">
+                                <div class="checkmark"></div>
+                                <span>XML Developer</span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="graphic">
+                                <div class="checkmark"></div>
+                                <span>Graphic Designer</span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="video">
+                                <div class="checkmark"></div>
+                                <span>Video Editor</span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="backend">
+                                <div class="checkmark"></div>
+                                <span>Backend Developer</span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="seo">
+                                <div class="checkmark"></div>
+                                <span>SEO Optimization</span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="hosting">
+                                <div class="checkmark"></div>
+                                <span>Hosting & Deployment</span>
+                            </label>
+                        </div>
+                        <div class="error-message" id="servicesError"></div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Budget & Timeline -->
+                <div class="form-step" id="step4">
+                    <div class="form-section">
+                        <div class="section-title">
+                            <i class="fas fa-calendar-alt"></i>
+                            Budget & Timeline
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">Budget Range <span class="required">*</span></label>
+                                <div class="custom-select">
+                                    <select id="budget" name="budget" required>
+                                        <option value="" selected disabled>Select budget range</option>
+                                        <option value="under-5k">Under $5,000</option>
+                                        <option value="5k-10k">$5,000 - $10,000</option>
+                                        <option value="10k-25k">$10,000 - $25,000</option>
+                                        <option value="25k-50k">$25,000 - $50,000</option>
+                                        <option value="50k-plus">$50,000+</option>
+                                        <option value="discuss">Let's Discuss</option>
+                                    </select>
+                                </div>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">Desired Timeline <span class="required">*</span></label>
+                                <div class="custom-select">
+                                    <select id="timeline" name="timeline" required>
+                                        <option value="" selected disabled>Select timeline</option>
+                                        <option value="asap">ASAP (Rush Job)</option>
+                                        <option value="1-month">Within 1 Month</option>
+                                        <option value="2-3-months">2-3 Months</option>
+                                        <option value="3-6-months">3-6 Months</option>
+                                        <option value="6-months-plus">6+ Months</option>
+                                        <option value="flexible">Flexible</option>
+                                    </select>
+                                </div>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo"
+                                placeholder="Any additional details, questions, or specific requirements..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Navigation -->
+                <div class="form-navigation">
+                    <button type="button" class="nav-btn prev-btn" id="prevBtn" disabled>
+                        <i class="fas fa-arrow-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="nav-btn next-btn" id="nextBtn">
+                        Next
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button type="submit" class="submit-btn" id="submitBtn" style="display: none;">
+                        <span class="btn-text" style="color: rgb(54, 52, 52); ">Send Project Request</span>
+                        <span class="btn-loader">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                        <span class="btn-success">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="hire-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Muhammad Zohair</h3>
+                    <p>Professional web developer creating amazing digital experiences.</p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/muhammad-zohair-8baaa42b8/" class="social-icon"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/muhammadzohair1" class="social-icon"><i
+                                class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/zohairgraphics/" class="social-icon"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="https://www.behance.net/gamerplayz" class="social-icon"><i
+                                class='bx bxl-behance'></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#hire">Hire Me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025
+                    <a href="index.html" class="logo-hire">Muhammad <span>Zohair</span></a> | All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="back-to-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize AOS (Animate On Scroll)
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+
+            // Initialize all components
+            initNavigation();
+            initParticles();
+            initFormStepper();
+            initFormValidation();
+            initAnimations();
+            initScrollEffects();
+
+            // ===== NAVIGATION FUNCTIONALITY =====
+            function initNavigation() {
+                const navToggle = document.getElementById('nav-toggle');
+                const navMenu = document.querySelector('.nav-menu');
+                const navLinks = document.querySelectorAll('.nav-link');
+                const navbar = document.getElementById('navbar');
+
+                if (navToggle) {
+                    navToggle.addEventListener('click', () => {
+                        navMenu.classList.toggle('active');
+                        navToggle.classList.toggle('active');
+                    });
+                }
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    });
+                });
+
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 100) {
+                        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+                        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                    } else {
+                        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+                        navbar.style.boxShadow = 'none';
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetId = link.getAttribute('href');
+                        const targetSection = document.querySelector(targetId);
+
+                        if (targetSection) {
+                            const offsetTop = targetSection.offsetTop - 80;
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            }
+
+            // ===== FORM STEPPER FUNCTIONALITY =====
+            function initFormStepper() {
+                const form = document.getElementById('hireForm');
+                const steps = document.querySelectorAll('.form-step');
+                const progressFill = document.getElementById('progressFill');
+                const progressSteps = document.querySelectorAll('.progress-steps .step');
+                const prevBtn = document.getElementById('prevBtn');
+                const nextBtn = document.getElementById('nextBtn');
+                const submitBtn = document.getElementById('submitBtn');
+
+                let currentStep = 1;
+                const totalSteps = steps.length;
+
+                function updateProgress() {
+                    const progressPercentage = (currentStep / totalSteps) * 100;
+                    progressFill.style.width = `${progressPercentage}%`;
+
+                    progressSteps.forEach((step, index) => {
+                        const stepNumber = index + 1;
+                        if (stepNumber <= currentStep) {
+                            step.classList.add('active');
+                        } else {
+                            step.classList.remove('active');
+                        }
+                    });
+
+                    prevBtn.disabled = currentStep === 1;
+
+                    if (currentStep === totalSteps) {
+                        nextBtn.style.display = 'none';
+                        submitBtn.style.display = 'inline-flex';
+                    } else {
+                        nextBtn.style.display = 'inline-flex';
+                        submitBtn.style.display = 'none';
+                    }
+                }
+
+                function showStep(stepNumber) {
+                    steps.forEach((step, index) => {
+                        if (index + 1 === stepNumber) {
+                            step.classList.add('active');
+                            animateStepEntry(step);
+                        } else {
+                            step.classList.remove('active');
+                        }
+                    });
+                    updateProgress();
+                }
+
+                function animateStepEntry(step) {
+                    const formGroups = step.querySelectorAll('.form-group, .services-grid');
+                    formGroups.forEach((group, index) => {
+                        group.style.opacity = '0';
+                        group.style.transform = 'translateY(30px)';
+
+                        setTimeout(() => {
+                            group.style.transition = 'all 0.5s ease';
+                            group.style.opacity = '1';
+                            group.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    });
+                }
+
+                function validateCurrentStep() {
+                    const currentStepElement = document.getElementById(`step${currentStep}`);
+                    let isValid = true;
+
+                    const requiredFields = currentStepElement.querySelectorAll('[required]');
+                    requiredFields.forEach(field => {
+                        if (!validateField(field)) {
+                            isValid = false;
+                        }
+                    });
+
+                    if (currentStep === 3) {
+                        const checkedServices = currentStepElement.querySelectorAll('input[name="services"]:checked');
+                        const servicesError = document.getElementById('servicesError');
+
+                        if (checkedServices.length === 0) {
+                            servicesError.textContent = 'Please select at least one service';
+                            servicesError.classList.add('show');
+                            isValid = false;
+                        } else {
+                            servicesError.textContent = '';
+                            servicesError.classList.remove('show');
+                        }
+                    }
+
+                    return isValid;
+                }
+
+                nextBtn.addEventListener('click', () => {
+                    const emailField = document.getElementById('email');
+                    if (emailField && !emailField.value.includes('@') && emailField.value.length > 0) {
+                        emailField.value = emailField.value + '@gmail.com';
+                        validateField(emailField);
+                    }
+
+                    if (validateCurrentStep() && currentStep < totalSteps) {
+                        currentStep++;
+                        showStep(currentStep);
+                    }
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    if (currentStep > 1) {
+                        currentStep--;
+                        showStep(currentStep);
+                    }
+                });
+
+                form.addEventListener('submit', handleFormSubmission);
+                showStep(1);
+            }
+
+            // ===== ENHANCED FORM VALIDATION =====
+            function initFormValidation() {
+                const form = document.getElementById('hireForm');
+                const inputs = form.querySelectorAll('input, textarea, select');
+
+                document.getElementById('phone').required = true;
+                document.getElementById('company').required = true;
+
+                const phoneInput = document.getElementById('phone');
+                if (phoneInput) {
+                    phoneInput.addEventListener('input', function () {
+                        this.value = this.value.replace(/\D/g, '');
+                        if (this.value.length > 11) {
+                            this.value = this.value.slice(0, 11);
+                            showFieldError(this, 'Phone number cannot exceed 11 digits');
+                        }
+                    });
+                }
+
+                inputs.forEach(input => {
+                    input.addEventListener('blur', () => validateField(input));
+                    input.addEventListener('input', () => clearFieldError(input));
+                });
+
+                const serviceOptions = document.querySelectorAll('.service-option');
+                serviceOptions.forEach(option => {
+                    option.addEventListener('click', () => {
+                        const checkbox = option.querySelector('input[type="checkbox"]');
+                        const checkmark = option.querySelector('.checkmark');
+
+                        checkbox.checked = !checkbox.checked;
+
+                        if (checkbox.checked) {
+                            checkmark.style.transform = 'scale(1.2)';
+                            setTimeout(() => {
+                                checkmark.style.transform = 'scale(1)';
+                            }, 200);
+                        }
+                    });
+                });
+            }
+
+            function validateField(field) {
+                const value = field.value.trim();
+                let isValid = true;
+                let errorMessage = '';
+
+                if (field.hasAttribute('required') && !value) {
+                    isValid = false;
+                    errorMessage = 'This field is required';
+                } else if (field.id === 'fullName' && value.length < 3) {
+                    isValid = false;
+                    errorMessage = 'Name must be at least 3 characters';
+                } else if (field.id === 'email') {
+                    if (!value) {
+                        isValid = false;
+                        errorMessage = 'Email is required';
+                    } else if (!isValidEmail(value)) {
+                        isValid = false;
+                        errorMessage = 'Please enter a valid email';
+                    }
+                } else if (field.id === 'phone') {
+                    if (!value) {
+                        isValid = false;
+                        errorMessage = 'Phone number is required';
+                    } else if (!isValidPhone(value)) {
+                        isValid = false;
+                        errorMessage = 'Phone must be exactly 11 digits';
+                    }
+                } else if (field.id === 'company') {
+                    if (!value) {
+                        isValid = false;
+                        errorMessage = 'Company/Organization is required';
+                    }
+                }
+
+
+
+                if (!isValid) {
+                    showFieldError(field, errorMessage);
+                } else {
+                    clearFieldError(field);
+                }
+
+                return isValid;
+            }
+
+            function isValidEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+
+            function isValidPhone(phone) {
+                return /^\d{11}$/.test(phone);
+            }
+
+            function showFieldError(field, message) {
+                const formGroup = field.closest('.form-group');
+                const errorMessage = formGroup?.querySelector('.error-message');
+
+                formGroup?.classList.add('error');
+                if (errorMessage) {
+                    errorMessage.textContent = message;
+                    errorMessage.classList.add('show');
+                }
+            }
+
+            function clearFieldError(field) {
+                const formGroup = field.closest('.form-group');
+                const errorMessage = formGroup?.querySelector('.error-message');
+
+                formGroup?.classList.remove('error');
+                if (errorMessage) {
+                    errorMessage.textContent = '';
+                    errorMessage.classList.remove('show');
+                }
+            }
+
+            // ===== FORM SUBMISSION =====
+            async function handleFormSubmission(e) {
+                e.preventDefault();
+
+                const submitBtn = document.getElementById('submitBtn');
+                const form = e.target;
+
+                // Show loading state
+                submitBtn.classList.add('loading');
+                submitBtn.disabled = true;
+
+                try {
+                    // Collect form data
+                    const formData = new FormData(form);
+
+                    // Send data to backend
+                    const response = await fetch('hire-contact.php', {   // ✅ changed here
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const data = await response.json();
+
+                    if (data.status === 'success') {
+                        // Show success state
+                        submitBtn.classList.remove('loading');
+                        submitBtn.classList.add('success');
+
+                        showSuccessMessage();
+
+                        // Reset form after delay
+                        setTimeout(() => {
+                            resetForm();
+                        }, 3000);
+                    } else {
+                        throw new Error(data.message || 'Unknown error');
+                    }
+
+                } catch (error) {
+                    console.error('Form submission error:', error);
+
+                    // Show error state
+                    submitBtn.classList.remove('loading');
+                    showErrorMessage(error.message);
+
+                    // Re-enable button
+                    setTimeout(() => {
+                        submitBtn.disabled = false;
+                    }, 2000);
+                }
+            }
+
+
+
+            function showSuccessMessage() {
+                const successMessage = document.createElement('div');
+                successMessage.className = 'success-message';
+                successMessage.innerHTML = `
+                <div class="success-content">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your project request has been submitted successfully.</p>
+                </div>
+            `;
+
+                successMessage.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.9);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 10000;
+                animation: fadeIn 0.5s ease;
+            `;
+
+                document.body.appendChild(successMessage);
+                setTimeout(() => successMessage.remove(), 5000);
+            }
+
+            function showErrorMessage(message) {
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error-notification';
+                errorDiv.textContent = message;
+                errorDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #ff6b6b;
+                color: white;
+                padding: 1rem 2rem;
+                border-radius: 10px;
+                z-index: 10000;
+                animation: slideInRight 0.5s ease;
+            `;
+
+                document.body.appendChild(errorDiv);
+                setTimeout(() => errorDiv.remove(), 5000);
+            }
+
+            function resetForm() {
+                const form = document.getElementById('hireForm');
+                const submitBtn = document.getElementById('submitBtn');
+
+                form.reset();
+                submitBtn.classList.remove('loading', 'success');
+                submitBtn.disabled = false;
+
+                const steps = document.querySelectorAll('.form-step');
+                steps.forEach((step, index) => {
+                    if (index === 0) step.classList.add('active');
+                    else step.classList.remove('active');
+                });
+
+                document.getElementById('progressFill').style.width = '25%';
+                document.querySelectorAll('.progress-steps .step').forEach((step, index) => {
+                    if (index === 0) step.classList.add('active');
+                    else step.classList.remove('active');
+                });
+
+                document.getElementById('prevBtn').disabled = true;
+                document.getElementById('nextBtn').style.display = 'inline-flex';
+                document.getElementById('submitBtn').style.display = 'none';
+            }
+
+            // ===== PARTICLE ANIMATION =====
+            function initParticles() {
+                const particlesContainer = document.querySelector('.hero-particles');
+                if (!particlesContainer) return;
+
+                for (let i = 0; i < 50; i++) {
+                    createParticle(particlesContainer);
+                }
+            }
+
+            function createParticle(container) {
+                const particle = document.createElement('div');
+                particle.style.cssText = `
+                position: absolute;
+                width: ${Math.random() * 4 + 1}px;
+                height: ${Math.random() * 4 + 1}px;
+                background: rgba(0, 238, 238, ${Math.random() * 0.5 + 0.2});
+                border-radius: 50%;
+                left: ${Math.random() * 100}%;
+                top: ${Math.random() * 100}%;
+                animation: float-particle ${Math.random() * 20 + 10}s linear infinite;
+                pointer-events: none;
+            `;
+
+                container.appendChild(particle);
+
+                if (!document.getElementById('particle-styles')) {
+                    const style = document.createElement('style');
+                    style.id = 'particle-styles';
+                    style.textContent = `
+                    @keyframes float-particle {
+                        0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+                        10% { opacity: 1; }
+                        90% { opacity: 1; }
+                        100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+                    }
+                `;
+                    document.head.appendChild(style);
+                }
+            }
+
+            // ===== ANIMATIONS AND EFFECTS =====
+            function initAnimations() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate');
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+                document.querySelectorAll('.service-card, .step-card, .form-group').forEach(el => observer.observe(el));
+                addTypingEffect();
+            }
+
+            function addTypingEffect() {
+                const heading = document.querySelector('.hero-main-heading');
+                if (!heading) return;
+
+                const text = heading.textContent;
+                heading.textContent = '';
+
+                let index = 0;
+                const typeSpeed = 100;
+
+                function type() {
+                    if (index < text.length) {
+                        heading.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(type, typeSpeed);
+                    }
+                }
+
+                setTimeout(type, 1000);
+            }
+
+            function initScrollEffects() {
+                window.addEventListener('scroll', () => {
+                    const scrolled = window.pageYOffset;
+                    const heroElement = document.querySelector('.hire-hero');
+
+                    if (heroElement) {
+                        heroElement.style.transform = `translateY(${scrolled * 0.5}px)`;
+                    }
+                });
+
+                const sections = document.querySelectorAll('section');
+                const sectionObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                sections.forEach(section => {
+                    section.style.opacity = '0';
+                    section.style.transform = 'translateY(30px)';
+                    section.style.transition = 'all 0.8s ease';
+                    sectionObserver.observe(section);
+                });
+            }
+        });
+
+        const additionalStyles = `
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .animate {
+            animation: slideInUp 0.6s ease forwards;
+        }
+    `;
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = additionalStyles;
+        document.head.appendChild(styleSheet);
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/Script.js"></script>
+</body>
+
+</html>
