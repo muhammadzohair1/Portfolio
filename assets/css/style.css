@@ -1498,7 +1498,7 @@ span {
 .service-icon {
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: var(--main-color)
+    color: black
 }
 
 .hover-3d:hover .service-icon {
