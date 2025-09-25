@@ -199,3 +199,52 @@ Stack trace:
 [21-Sep-2025 17:31:46 Europe/Berlin] Error: Please fill in the name field
 [21-Sep-2025 17:31:49 Europe/Berlin] Error: Please fill in the message field
 [21-Sep-2025 18:03:57 Europe/Berlin] Error: Please fill in the name field
+[24-Sep-2025 09:15:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[24-Sep-2025 09:18:13 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[24-Sep-2025 09:18:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[24-Sep-2025 09:18:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[24-Sep-2025 09:18:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[24-Sep-2025 09:18:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[24-Sep-2025 09:18:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'zohair'@'localhost' (using password: YES) in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php:20
+Stack trace:
+#0 C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php(20): mysqli->__construct('localhost', 'zohair', Object(SensitiveParameterValue), 'portfolio_conta...')
+#1 {main}
+  thrown in C:\xampp\htdocs\ZOHAIR-PORTFOLIO-WEBSITE\process-contact.php on line 20
+[24-Sep-2025 09:19:16 Europe/Berlin] Error: Please fill in the name field
+[24-Sep-2025 09:19:17 Europe/Berlin] Error: Please fill in the name field
+[24-Sep-2025 09:19:23 Europe/Berlin] Error: Please fill in the email field
+[24-Sep-2025 09:19:24 Europe/Berlin] Error: Please fill in the email field
+[24-Sep-2025 09:19:32 Europe/Berlin] Error: Please fill in the phone field
+[24-Sep-2025 09:19:33 Europe/Berlin] Error: Please fill in the phone field
+[24-Sep-2025 09:19:33 Europe/Berlin] Error: Please fill in the phone field
+[24-Sep-2025 09:19:45 Europe/Berlin] Error: Please fill in the age field
+[24-Sep-2025 09:19:47 Europe/Berlin] Error: Please fill in the message field
+[24-Sep-2025 09:19:47 Europe/Berlin] Error: Please fill in the message field
+[24-Sep-2025 09:19:48 Europe/Berlin] Error: Please fill in the message field
+[24-Sep-2025 09:19:48 Europe/Berlin] Error: Please fill in the message field
+[25-Sep-2025 11:47:27 Europe/Berlin] Error: Please fill in the name field
+[25-Sep-2025 12:41:27 Europe/Berlin] Error: Please fill in the name field

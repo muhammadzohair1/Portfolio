@@ -1,0 +1,114 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Sep 21, 2025 at 06:32 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `portfolio_contacts`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_submissions`
+--
+
+CREATE TABLE `contact_submissions` (
+  `id` int(11) NOT NULL,
+  `full_name` varchar(100) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `age` int(11) NOT NULL,
+  `message` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `contact_submissions`
+--
+
+INSERT INTO `contact_submissions` (`id`, `full_name`, `email`, `phone`, `age`, `message`, `created_at`) VALUES
+(1, 'zohairkhan', 'zohairkhan2008@gmail.com', '03282675433', 12, 'Hello', '2025-09-21 12:38:36'),
+(2, 'Muhammad Zohair', 'zohairkhan2008@gmail.com', '03282675433', 12, 'wad', '2025-09-21 15:31:50');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hire_requests`
+--
+
+CREATE TABLE `hire_requests` (
+  `id` int(11) NOT NULL,
+  `full_name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `company` varchar(255) DEFAULT NULL,
+  `project_title` varchar(255) DEFAULT NULL,
+  `project_type` varchar(100) DEFAULT NULL,
+  `project_description` text DEFAULT NULL,
+  `services` text DEFAULT NULL,
+  `budget` varchar(50) DEFAULT NULL,
+  `timeline` varchar(50) DEFAULT NULL,
+  `additional_info` text DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `hire_requests`
+--
+
+INSERT INTO `hire_requests` (`id`, `full_name`, `email`, `phone`, `company`, `project_title`, `project_type`, `project_description`, `services`, `budget`, `timeline`, `additional_info`, `created_at`) VALUES
+(1, '', '', '', '', '', '', '', '', '', '', '', '2025-09-21 15:01:38'),
+(2, 'zohair', 'zohairkhan2008@gmail.com', '03282675433', 'Path-Seeker', 'Project', 'UI/UX', 'Hello Its me Zohair...!!!???', 'graphic', '5k-10k', '1-month', '', '2025-09-21 15:03:56'),
+(3, 'Muhammad Zohair', 'zohairkhan2008@gmail.com', '03282675433', 'Path-Seeker', 'Project', 'UI/UX', 'awd', 'seo', '5k-10k', '3-6-months', '', '2025-09-21 15:32:39');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `contact_submissions`
+--
+ALTER TABLE `contact_submissions`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hire_requests`
+--
+ALTER TABLE `hire_requests`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `contact_submissions`
+--
+ALTER TABLE `contact_submissions`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `hire_requests`
+--
+ALTER TABLE `hire_requests`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

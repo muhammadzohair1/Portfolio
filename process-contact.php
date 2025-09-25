@@ -16,7 +16,6 @@ use PHPMailer\PHPMailer\Exception;
 $response = ['success' => false, 'message' => ''];
 
 try {
-    // Database connection - using your credentials from screenshot
     $conn = new mysqli("localhost", "zohair", "zohairkhan123", "portfolio_contacts");
     if ($conn->connect_error) {
         throw new Exception("Database connection failed: " . $conn->connect_error);

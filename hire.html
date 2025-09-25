@@ -1301,6 +1301,38 @@
 </head>
 
 <body>
+    <!-- Z Loader -->
+    <div class="loader-overlay" id="loader">
+        <div class="z-loader">
+            <!-- Rings -->
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+
+            <!-- Z Letter -->
+            <div class="z-letter">Z</div>
+
+            <!-- Floating Particles -->
+            <div class="loader-particles">
+                <div class="loader-particle"></div>
+                <div class="loader-particle"></div>
+                <div class="loader-particle"></div>
+                <div class="loader-particle"></div>
+                <div class="loader-particle"></div>
+            </div>
+        </div>
+
+        <!-- Loading Text -->
+        <div class="loader-text">
+            Loading Portfolio<span class="loader-dots">...</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="loader-progress">
+            <div class="loader-progress-bar" id="loaderProgress"></div>
+        </div>
+    </div>
+
     <!-- Header with Enhanced Animations -->
     <header class="header animate__animated animate__fadeInDown">
         <a href="index.html" class="logo" data-aos="fade-right">Muhammad
@@ -1774,6 +1806,158 @@
     <a href="#home" class="back-to-top" id="back-to-top">
         <i class='bx bx-up-arrow-alt'></i>
     </a>
+
+    <!-- <script>
+        // Portfolio Matching Loader
+        document.addEventListener('DOMContentLoaded', function () {
+            const loader = document.getElementById('loader');
+            const loaderProgress = document.getElementById('loaderProgress');
+            const loaderTitle = document.querySelector('.loader-title');
+            const body = document.body;
+
+            if (!loader) return;
+
+            // Prevent scrolling during loading
+            body.style.overflow = 'hidden';
+
+            // Loading messages that match your portfolio style
+            const loadingMessages = [
+                "Crafting Digital Experience...",
+                "Initializing Creativity...",
+                "Loading Innovations...",
+                "Almost There..."
+            ];
+
+            let messageIndex = 0;
+
+            function updateLoadingMessage() {
+                if (messageIndex < loadingMessages.length) {
+                    loaderTitle.textContent = loadingMessages[messageIndex];
+                    messageIndex++;
+                    setTimeout(updateLoadingMessage, 800);
+                }
+            }
+
+            // Start message rotation
+            setTimeout(updateLoadingMessage, 500);
+
+            // Smooth progress animation
+            let progress = 0;
+
+            function animateProgress() {
+                const targetProgress = 100;
+                const increment = 0.5;
+                const speed = 20;
+
+                function update() {
+                    if (progress < targetProgress) {
+                        progress += increment;
+                        loaderProgress.style.width = progress + '%';
+
+                        // Speed up near completion
+                        const currentSpeed = progress > 90 ? speed / 2 : speed;
+                        setTimeout(update, currentSpeed);
+                    } else {
+                        completeLoading();
+                    }
+                }
+
+                update();
+            }
+
+            function completeLoading() {
+                // Final completion effect
+                loaderProgress.style.width = '100%';
+                loaderTitle.textContent = "Ready!";
+
+                // Smooth hide animation
+                setTimeout(() => {
+                    loader.style.opacity = '0';
+                    loader.style.transform = 'scale(0.95)';
+
+                    setTimeout(() => {
+                        loader.classList.add('hidden');
+                        body.style.overflow = '';
+
+                        // Remove from DOM
+                        setTimeout(() => {
+                            if (loader.parentNode) {
+                                loader.remove();
+                            }
+                        }, 600);
+                    }, 500);
+                }, 800);
+            }
+
+            // Start progress animation
+            setTimeout(animateProgress, 1000);
+
+            // Safety net
+            setTimeout(() => {
+                if (loader && !loader.classList.contains('hidden')) {
+                    completeLoading();
+                }
+            }, 5000);
+        });
+
+        // Simple page transition
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a[href]');
+
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+
+                    // Only for portfolio pages
+                    if (href && (href.includes('index.html') || href.includes('hire.html'))) {
+                        if (!href.includes(window.location.pathname)) {
+                            e.preventDefault();
+
+                            // Show simple loading indication
+                            const loader = document.getElementById('loader');
+                            if (loader) {
+                                loader.style.display = 'flex';
+                                loader.classList.remove('hidden');
+                            }
+
+                            setTimeout(() => {
+                                window.location.href = href;
+                            }, 300);
+                        }
+                    }
+                });
+            });
+        });
+    </script> -->
+
+    <script>
+        // Loader functionality
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            const loaderProgress = document.getElementById("loaderProgress");
+            const body = document.body;
+
+            // Simulate progress bar while loading resources
+            let progress = 0;
+            const fakeProgress = setInterval(() => {
+                if (progress < 90) {
+                    progress += Math.random() * 10;
+                    loaderProgress.style.width = Math.min(progress, 90) + "%";
+                }
+            }, 200);
+
+            // When page fully loaded
+            loaderProgress.style.width = "100%";
+            clearInterval(fakeProgress);
+
+            setTimeout(() => {
+                loader.classList.add("hidden");
+                body.style.overflow = "";
+                setTimeout(() => loader.remove(), 800); // remove from DOM
+            }, 600); // wait a little for smooth transition
+        });
+
+    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -2334,6 +2518,7 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/Script.js"></script>
+
 </body>
 
 </html>

@@ -1581,3 +1581,501 @@ span {
         padding: 1.5rem 5%
     }
 }
+
+/* ===== Z LOADER ===== */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.loader-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.z-loader {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.z-letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--main-color);
+    text-shadow: 0 0 20px var(--main-color);
+    animation: zPulse 2s ease-in-out infinite;
+}
+
+.loader-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid var(--main-color);
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+}
+
+.loader-ring:nth-child(2) {
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--main-color);
+    animation: spinReverse 1.5s linear infinite;
+}
+
+.loader-ring:nth-child(3) {
+    width: 80%;
+    height: 80%;
+    border: 3px solid transparent;
+    border-left: 3px solid var(--main-color);
+    animation: spin 2s linear infinite;
+}
+
+.loader-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.loader-particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--main-color);
+    border-radius: 50%;
+    animation: floatParticle 3s ease-in-out infinite;
+}
+
+.loader-particle:nth-child(1) {
+    top: 10%;
+    left: 50%;
+    animation-delay: 0s;
+}
+
+.loader-particle:nth-child(2) {
+    top: 20%;
+    left: 80%;
+    animation-delay: 0.5s;
+}
+
+.loader-particle:nth-child(3) {
+    top: 80%;
+    left: 20%;
+    animation-delay: 1s;
+}
+
+.loader-particle:nth-child(4) {
+    top: 60%;
+    left: 90%;
+    animation-delay: 1.5s;
+}
+
+.loader-particle:nth-child(5) {
+    top: 90%;
+    left: 60%;
+    animation-delay: 2s;
+}
+
+.loader-text {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.loader-dots {
+    display: inline-block;
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinReverse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes zPulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        text-shadow: 0 0 20px var(--main-color);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        text-shadow: 0 0 30px var(--main-color), 0 0 40px var(--main-color);
+    }
+}
+
+@keyframes floatParticle {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translate(10px, -15px) scale(1.2);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translate(-5px, 10px) scale(0.8);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translate(15px, 5px) scale(1.1);
+        opacity: 0.6;
+    }
+}
+
+@keyframes dots {
+
+    0%,
+    20% {
+        color: transparent;
+    }
+
+    40% {
+        color: var(--main-color);
+    }
+
+    60%,
+    100% {
+        color: transparent;
+    }
+}
+
+/* Loading progress bar */
+.loader-progress {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.loader-progress-bar {
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 2px;
+    width: 0%;
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+/* Responsive loader */
+@media (max-width: 768px) {
+    .z-loader {
+        width: 80px;
+        height: 80px;
+    }
+
+    .z-letter {
+        font-size: 2.5rem;
+    }
+
+    .loader-text {
+        font-size: 1rem;
+        bottom: -40px;
+    }
+}
+
+/* ===== Z LOADER (Final Premium Version) ===== */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050510;
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.loader-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.z-loader {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+/* Z Letter (Neon Glow) */
+.z-letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #00f6ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 25px #00f6ff, 0 0 45px #ff00ff;
+    animation: zPulse 2s ease-in-out infinite;
+}
+
+/* Neon Rings */
+.loader-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #00f6ff;
+    border-radius: 50%;
+    animation: spin 1.6s linear infinite;
+    box-shadow: 0 0 20px #00f6ff;
+}
+
+.loader-ring:nth-child(2) {
+    border-top: none;
+    border-bottom: 3px solid #ff00ff;
+    animation: spinReverse 2.2s linear infinite;
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+.loader-ring:nth-child(3) {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    border-left: 3px solid #00f6ff;
+    animation: spin 2.8s linear infinite;
+}
+
+/* Floating Neon Particles */
+.loader-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.loader-particle {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #00f6ff, #ff00ff);
+    box-shadow: 0 0 15px #00f6ff, 0 0 30px #ff00ff;
+    animation: floatParticle 3s ease-in-out infinite;
+}
+
+.loader-particle:nth-child(1) {
+    top: 12%;
+    left: 50%;
+    animation-delay: 0s;
+}
+
+.loader-particle:nth-child(2) {
+    top: 25%;
+    left: 80%;
+    animation-delay: 0.5s;
+}
+
+.loader-particle:nth-child(3) {
+    top: 78%;
+    left: 22%;
+    animation-delay: 1s;
+}
+
+.loader-particle:nth-child(4) {
+    top: 65%;
+    left: 88%;
+    animation-delay: 1.5s;
+}
+
+.loader-particle:nth-child(5) {
+    top: 90%;
+    left: 55%;
+    animation-delay: 2s;
+}
+
+/* Loader Text */
+.loader-text {
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.loader-dots {
+    display: inline-block;
+    animation: dots 1.5s steps(4, end) infinite;
+    color: #00f6ff;
+}
+
+/* Progress Bar */
+.loader-progress {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.loader-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #00f6ff, #ff00ff, #00f6ff);
+    background-size: 200% 100%;
+    animation: progressGlow 2s linear infinite;
+    transition: width 0.4s ease;
+    box-shadow: 0 0 20px #00f6ff, 0 0 35px #ff00ff;
+}
+
+/* ===== Animations ===== */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinReverse {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes zPulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        text-shadow: 0 0 25px #00f6ff, 0 0 45px #ff00ff;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.15);
+        text-shadow: 0 0 40px #00f6ff, 0 0 70px #ff00ff;
+    }
+}
+
+@keyframes floatParticle {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translate(12px, -8px) scale(1.3);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translate(-8px, 10px) scale(0.8);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translate(10px, 6px) scale(1.1);
+        opacity: 0.5;
+    }
+}
+
+@keyframes dots {
+
+    0%,
+    20% {
+        color: transparent;
+    }
+
+    40% {
+        color: #00f6ff;
+    }
+
+    60%,
+    100% {
+        color: transparent;
+    }
+}
+
+@keyframes progressGlow {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .z-loader {
+        width: 90px;
+        height: 90px;
+    }
+
+    .z-letter {
+        font-size: 3rem;
+    }
+
+    .loader-text {
+        font-size: 1rem;
+        bottom: -45px;
+    }
+
+    .loader-progress {
+        width: 160px;
+    }
+}
